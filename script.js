@@ -188,23 +188,106 @@ GOOG LUCK :)
 // </--Popar Ruls---/>
 
 // task 1
-const calcAverage = (a, b, c) => (a + b + c) / 3;
+// const calcAverage = (a, b, c) => (a + b + c) / 3;
 
-// task 2
-const scoreDolphins = calcAverage(44, 23, 71);
-const scoreKoalas = calcAverage(65, 54, 49);
-console.log(scoreDolphins, scoreKoalas);
+// // task 2
+// let scoreDolphins = calcAverage(44, 23, 71);
+// let scoreKoalas = calcAverage(65, 54, 49);
+// console.log(scoreDolphins, scoreKoalas);
 
-const checkWinner = function (avgDolhins, avgKoalas){
-    if(avgDolhins >= 2 * avgKoalas){
-        console.log(`Dolphins win (${avgDolhins} vs. ${avgKoalas})`);
-    }else if(avgDolhins >= 2 * avgKoalas){
-        console.log(`Koalas win (${avgKoalas} vs. ${avgDolhins})`);
-    }
-    else{
-        console.log("No team wins....")
-    }
+// const checkWinner = function (avgDolhins, avgKoalas){
+//     if(avgDolhins >= 2 * avgKoalas){
+//         console.log(`Dolphins win (${avgDolhins} vs. ${avgKoalas})`);
+//     }else if(avgDolhins >= 2 * avgKoalas){
+//         console.log(`Koalas win (${avgKoalas} vs. ${avgDolhins})`);
+//     }
+//     else{
+//         console.log("No team wins....")
+//     }
+// }
+
+// checkWinner(scoreDolphins,scoreKoalas);
+
+/////////////////////////////////////////////
+
+// </------Array--------/>
+
+// const friend1 = 'Sajid';
+// const friend2 = 'Antor';
+// const friend3 = 'Ridwan';
+
+// const friends = ['Sajid', 'Antor', 'Ridwan', 'Farhan', 'Jisan'];
+// console.log(friends);
+
+// const years = new Array(1991, 1984, 2008, 2020);
+
+// console.log(friends[0]);
+// console.log(friends[4]);
+// console.log(friends.length);
+
+// friends[4] = 'Rohan';
+// console.log(friends)
+// console.log(friends[friends.length - 1]);
+// console.log(friends[4]);
+
+// const firstName = "Ridwan"
+// const listFriend = [firstName, 'Jannar', 2023 - 2002, 'teacher', friends];
+// console.log(listFriend);
+
+// Ecercies
+// const calcAge = birthYear => 2023 - birthYear;
+
+// const year = [1990, 1995, 2000, 2002, 2005];
+
+// const age1 = calcAge(year[0]);
+// const age2 = calcAge(year[1]);
+// const age3 = calcAge(year[2]);
+// const age4 = calcAge(year[3]);
+// const age5 = calcAge(year[year.length - 1]);
+// const ages = [calcAge(year[0]),calcAge(year[1]), calcAge(year[2]),calcAge(year[3]),calcAge(year[year.length - 1])]
+// console.log(age1,age2,age3,age4,age5)
+// console.log(ages);
+
+///////////
+
+// const friendList = ['Rahat', 'Shuvo', 'samir', 'rohan']
+// const myDetails = {
+//     name: "Ridwan",
+//     age: 21,
+//     roll: 478773,
+//     city: 'Narayanganj',
+// }
+
+// const friends = ['Ridwan','sajid', 'antor'];
+// // add elementa;
+// friends.push('Jisan');
+// friends.push(friendList);
+// friends.push(myDetails);
+// console.log(friends);
+
+// // first add elements
+// friends.unshift('Jannat')
+// console.log(friends);
+
+// //remove elements;
+// const pops = friends.pop();
+// // remove unshift element
+// friends.shift()
+
+
+console.log(friends )
+console.log(friends.indexOf('Ridwan'))
+console.log(friends.indexOf('Jannat'))
+
+// includes elemnets check true or false;
+friends.push(23);
+console.log(friends.includes('Ridwan'))
+console.log(friends.includes('Jannat'))
+console.log(friends.includes(23))
+
+//if check includes elements
+if(friends.includes('Jisan')){
+    console.log("You Have a friend called Jisan")
+}else{
+    console.log("Not jisan name")
 }
-
-checkWinner(scoreDolphins,scoreKoalas);
-
